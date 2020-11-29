@@ -1,0 +1,129 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    /* background-image: url('media/BK.jpeg'); */
+  }
+
+#container {   
+    height: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 350px;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+        'header header header'
+        'content content navbar'
+        'footer footer footer';  
+    
+    background-image: linear-gradient(rgb(191, 221, 255), rgb(0, 22, 48));
+}
+
+#header {    
+    grid-area: header;
+}
+
+
+
+#main-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;    
+}
+
+#content1 {
+    position: relative;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+#name-info { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}   
+
+#name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    transition: font-size 0.333s;
+}
+
+#name:hover {    
+    font-size: 60px;
+}
+
+#freelancer {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#designer {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#developer {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 300; 
+}
+
+#content2 {
+    position: relative;    
+    height: 100%;
+    width: 100%;     
+}
+
+#profile-pic {     
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: height 0.5s;
+}
+
+#profile-pic:hover {
+    height: 102%;
+    
+}
+
+#navbar {     
+    color: white;    
+    grid-area: navbar;
+}
+
+.nav-list {          
+    height: 500px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+}
+
+.nav-links {    
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 35px;
+    margin-left: 0px;
+    padding-left: 15px;
+    color: black;
+    border-left: solid black 1.5px;
+    transition: padding-left 0.333s;
+}
+
+.nav-links:hover {       
+    padding-left: 30px;           
+}
+
+#footer {
+    background-color: black;
+    grid-area: footer;   
+
+}
