@@ -51,6 +51,24 @@ body {
     border-radius: 5px;
 }
 
+@media (min-width: 1000px) {
+    #survey-form{
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: margin-left 0.3s;
+    transition: margin-right 0.3s;
+    }
+}
+
+@media (min-width: 1600px) {
+    #survey-form{
+    margin-left: 30%;
+    margin-right: 30%;
+    transition: margin-left 0.3s;
+    transition: margin-right 0.3s;
+    }
+}
+
 .form-group {    
     display: flex;
     flex-direction: column;    
