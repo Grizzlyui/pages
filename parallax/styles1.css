@@ -1,0 +1,56 @@
+body, html {
+    margin: 0px;
+    height: 100%;  
+}
+
+.backgrounds {    
+    display: flex;
+    flex-direction: column;     
+    justify-content: space-evenly;   
+    height: 600%;     
+    margin:0px;    
+}
+
+#background1 {
+    background-image: url("media/background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 140%;  
+    height: 100%;
+    z-index: -1;
+}
+
+#background2 {
+    background-image: url("media/background2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 100%;  
+    width: 100%;
+    z-index: -1;
+}
+
+#background3 {
+    background-image: url("media/background3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 100%;    
+    width: 100%;
+    z-index: -1;
+}
+
+#background4 {
+    background-image: url("media/background4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 100%;   
+    width: 100%;
+    z-index: -1;
+}
